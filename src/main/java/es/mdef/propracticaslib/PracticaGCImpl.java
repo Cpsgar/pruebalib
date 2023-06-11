@@ -17,4 +17,7 @@ public class PracticaGCImpl extends PracticaImpl implements PracticaGC {
 	public void setAlumnosPropuestos(String alumnosPropuestos) {
 		this.alumnosPropuestos = alumnosPropuestos;
 	}
+	public Tipo_Practica getTipoPractica() {
+		return Tipo_Practica.GuardiaCivil;
+	}
 }

@@ -18,7 +18,12 @@ public class PracticaImpl implements Practica {
 	private String tutorEmail;
 	private ZonedDateTime fechaComienzo;
 	List<Alumno> alumnos;
-	
+
+	public enum Tipo_Practica {
+		Defensa,
+		GuardiaCivil
+	}
+		
 	public String getEstadoValidacion() {
 		return estadoValidacion;
 	}
@@ -97,6 +102,11 @@ public class PracticaImpl implements Practica {
 	public void setAlumnos(List<Alumno> alumnos) {
 		this.alumnos = alumnos;
 	}
+	
+	public Tipo_Practica getTipoPractica() {
+		return null;
+	}
+	
 	public Integer getAlumnosAsignados() {
 		if (getAlumnos() != null) {
 			return  getAlumnos().size();

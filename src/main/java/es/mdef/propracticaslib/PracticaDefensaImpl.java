@@ -17,4 +17,7 @@ public class PracticaDefensaImpl extends PracticaImpl implements PracticaDefensa
 	public void setHps(String hps) {
 		this.hps = hps;
 	}
+	public Tipo_Practica getTipoPractica() {
+		return Tipo_Practica.Defensa;
+	}
 }
